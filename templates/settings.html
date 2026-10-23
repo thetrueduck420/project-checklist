@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "headers/headheader.html" %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='settings.css') }}">
+</head>
+
+<body>
+
+    {% include "headers/bodyheader.html" %}
+
+    <div id="settingsdiv" class="center">
+        <form action="/Settings/mod/" method="post" onkeydown="return event.key != 'Enter';">
+            {% for section in conf.keys() %}
+                <h1>[{{ section }}]</h1>
+
+                <section class="configsection">
+                    {% for setting in conf[section].keys() %}
+                        <h3>{{ setting }}</h3>
+                        <label for="{{ setting }}">↳</label>
+
+                        <span>
+                            <input type="text" name="{{ section }}.{{ setting }}" value="{{ conf[section][setting] }}">
+                        </span>
+                    {% endfor %}
+                </section>
+            {% endfor %}
+        <div>
+                <input class="submitbutton" type="submit" value="Apply changes">
+            </form>
+
+            <form action="/Settings/reset" method="post">
+                <input class="submitbutton" id="resetbutton" type="submit" name="reset" value="Reset to default">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

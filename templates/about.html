@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "headers/headheader.html" %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+</head>
+
+<body>
+    
+    {% include "headers/bodyheader.html" %}
+
+    <h1>About Project Checklist</h1>
+
+    {% for line in about %}
+        <p class="aboutline">{{ line }}</p>
+    {% endfor %}
+
+</body>
+</html>

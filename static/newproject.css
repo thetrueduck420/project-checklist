@@ -1,0 +1,40 @@
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#nameinput {
+    margin: 0;
+    margin-right: 100%;
+    margin-bottom: 10px;
+
+    float: left;
+}
+
+#nameandsubmit {
+    margin: 0;
+    padding: 0;
+
+    margin-left: 10px;
+
+    position: absolute;
+    left: 0;
+}
+
+#checklistarea {
+    margin-left: 30px;
+}
+
+#notice {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+}

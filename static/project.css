@@ -1,0 +1,53 @@
+h1 {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    
+    padding: 0;
+}
+
+.checkbox {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    float: right;
+}
+
+#checklistdiv {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(86, 86, 87);
+    border-radius: 10px;
+    background-color: rgb(47, 47, 46);
+    max-width: 1200px;
+    min-width: 60%;
+
+    min-height: 85%;
+
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+#confirmbutton {
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+#newtask {
+    margin-top: 5px;
+    margin-left: 10px;
+}

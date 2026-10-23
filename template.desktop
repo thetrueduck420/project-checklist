@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=__REPLACEVER__
+Type=Application
+Terminal=false
+Exec=__REPLACEEXEC__
+Name=Project Checklist

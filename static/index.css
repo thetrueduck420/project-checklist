@@ -1,0 +1,131 @@
+@font-face {
+    font-family: dotmatrix;
+    src: url(fonts/dot_matrix/DOTMATRI.TTF);
+}
+
+@font-face {
+    font-family: dotmatrixbold;
+    src: url(fonts/dot_matrix/DOTMBold.TTF);
+}
+
+@keyframes fadein {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+body { 
+    background-color: var(--bgcolor); 
+    font-family: var(--fontfamily);
+    color: var(--textcolor);
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+
+}
+
+.nicestyle {
+    border: solid;
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: rgb(86, 86, 87);
+    background-color: rgb(47, 47, 46);
+    font-family: dotmatrix;
+    color: aliceblue;
+
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+.project {
+    padding-top: 10px;
+}
+
+.projectlabel {
+    border-left: 3px solid rgb(53, 159, 209);
+    padding-left: 10px;
+}
+
+#actiondiv {
+    padding-top: 20px;
+    height: 30px;
+
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+#newprojectbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: black;
+    border: solid;
+    border-color: rgb(82, 176, 187);
+    border-radius: 5px;
+    background-color: rgb(67, 205, 182);
+    margin-right: 3px;
+    width: 105px;
+    font-family: dotmatrix;
+}
+
+#projectbtn {
+    text-decoration: none;
+    border: solid;
+    border-width: 1px;
+    color: black;
+    border-color: rgb(82, 176, 187);
+    border-radius: 5px;
+    background-color: rgb(67, 205, 182);
+}
+
+#delprojectbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    border: solid;
+    border-width: 1px;
+    color: black;
+    border-color: rgb(187, 98, 82);
+    border-radius: 5px;
+    background-color: rgb(205, 92, 67);
+}
+
+#searchbox {
+    padding-left: 3px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#welcoming {
+    font-family: dotmatrixbold;
+    padding-left: 20px;
+}
+
+#projectlist {
+    position: absolute;
+    top: 35%;
+
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(86, 86, 87);
+    border-radius: 10px;
+    background-color: rgb(47, 47, 46);
+    max-width: 1200px;
+    min-width: 60%;
+    min-height: 300px;
+
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+#projectlist a {
+    margin-right: 10px;
+    float: right;
+    
+}

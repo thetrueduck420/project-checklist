@@ -1,0 +1,4 @@
+__pycache__/
+__venv__/
+src/config.toml
+src/projects.db

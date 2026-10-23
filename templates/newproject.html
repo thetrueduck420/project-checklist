@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "headers/headheader.html" %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='newproject.css') }}">
+</head>
+
+<body>
+    {% include "headers/bodyheader.html" %}
+    
+    <h1>New project</h1>
+    <h3>Lets get started!</h3>
+    
+    <hr>
+
+    <div class="center" id="newprojectdiv">
+        <form action="/Projects/new/data/" method="post">
+            <div id="nameandsubmit">
+                <input type="text" id="nameinput" name="name" placeholder="Project name" class="nicestyle">
+                <input type="submit" id="submitbutton" value="Done" class="nicestyle">
+            </div>
+
+            <textarea name="checklist" id="checklistarea" rows="50" cols="60" class="nicestyle" placeholder="checklist goes here, every new line will be a new checkbox."></textarea>
+        </form>
+    </div>
+
+    <p id="notice">Notice: you must include BOTH a name AND a checklist, otherwise the project will be discarded.</p>
+
+
+</body>
+</html>

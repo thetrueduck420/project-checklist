@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "headers/headheader.html" %}
+    <script src="{{ url_for('static', filename='javascript/newtask.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='project.css') }}">
+</head>
+
+<body>
+    {% include "headers/bodyheader.html" %}
+
+    <h1>{{ name }}</h1>
+
+    <hr>
+
+    <div id="checklistdiv">
+        <form action="/Projects/mod/" id="checklist" method="post">
+            <div id="checklistinputdiv">
+                {% for task in list %}
+                    <input type="checkbox" class="checkbox" {{ task[1] }} name="{{ task[0] }}">
+                    <h3>[ {{ task[0] }}</h3>
+                {% endfor %}
+            </div>
+            <input type="hidden" name="hiddenname" value="{{ name }}">
+            <input type="submit" id="confirmbutton" class="nicestyle" value="CONFIRM">
+        </form>
+
+        <input type="text" id="newtask" class="nicestyle" onchange="newtask()" placeholder="New Task">
+    </div>
+</body>
+</html>

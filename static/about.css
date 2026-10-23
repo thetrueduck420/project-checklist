@@ -1,0 +1,15 @@
+@keyframes fadein {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+body {
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+.aboutline {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}

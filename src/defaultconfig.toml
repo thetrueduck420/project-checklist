@@ -1,0 +1,10 @@
+[server]
+host = "127.0.0.1"
+port = "8060"
+
+[general]
+backgroundcolor = "rgb(23, 23, 23)"
+fontfamily = "dotmatrix"
+fontfamilybold = "dotmatrixbold"
+textcolor = "aliceblue"
+username = "__USERNAMEREPLACE__"

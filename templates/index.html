@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    {% include "headers/headheader.html" %}
+
+    <script src="{{ url_for("static", filename="javascript/confirmdeletion.js") }}"></script>
+</head>
+
+<body>
+    {% include "headers/bodyheader.html" %}
+
+
+    <section>
+        <div, class="center", id="actiondiv">
+            <a href="/Projects/new" id="newprojectbtn">New Project</a>
+            <input type="text", placeholder="Search...", id="searchbox" class="nicestyle">
+        </div>
+    </section>
+
+    <section>
+        <h2 id="welcoming", class="center">Welcome back, {{ name }}! {{ quote }}</h2>
+    </section>
+    <hr>
+
+    <section>
+        <p class="center", style="font-family: var(--fontfamilybold);">Your projects:</p>
+        <div, class="center">
+            <div id="projectlist">
+                {% if not projects %}
+                    <span class="projectlabel">No Projects!</span>
+                {% else %}
+                    {% for project in projects %}
+                        <section class="project">
+                            <span class="projectlabel">{{ project }}</span>
+                            <a onclick="confirmdelete('{{ project }}')" id="delprojectbtn">DELETE</a>
+                            <a href="/Projects/'{{ project }}'" id="projectbtn">OPEN</a>
+                        </section>
+                    {% endfor %}
+                {% endif %}
+            </div>  
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+installer.py
+installignore
+.gitignore
+requirements.txt
+README.md
+template.desktop
+src/projects.db
+src/config.toml
+__pycache__
+venv

@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Checklist</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='navbar.css') }}">
+
+<style> 
+    :root {
+        --bgcolor: {{ conf["general"]["backgroundcolor"] }};
+        --fontfamily: {{ conf["general"]["fontfamily"] }};
+        --fontfamilybold: {{ conf["general"]["fontfamilybold"] }};
+        --textcolor: {{ conf["general"]["textcolor"] }};
+    }
+</style>
