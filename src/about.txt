@@ -1,0 +1,3 @@
+Project Checklist is a tool i built for easy project management.
+It features a easy to use way of creating new project checklists.
+Once a new project is created, you are able to assign new tasks for it and update tasks!
